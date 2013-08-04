@@ -1,0 +1,29 @@
+{
+  "name": "kld-transform-parser",
+  "version": "0.0.1",
+  "description": "Event-driven SVG transform parser",
+  "author": {
+    "name": "Kevin Lindsey",
+    "email": "kevin@kevlindev.com"
+  },
+  "license": "BSD",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thelonious/kld-transform-parser.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "expresso"
+  },
+  "keywords": [
+    "transforms",
+    "parser",
+    "SVG"
+  ],
+  "devDependencies": {
+    "expresso": "0.9.2"
+  },
+  "engines": {
+    "node": ">= 0.10.4"
+  }
+}
