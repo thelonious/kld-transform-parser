@@ -1,15 +1,19 @@
-var TransformLexer = require('../lib/TransformLexer');
+"use strict";
 
-exports.matrix = function(beforeExit, assert) {
-    var lexer = new TransformLexer();
-    var source = "matrix(1, 2, 3, 4, 5, 6)";
+const TransformLexer = require("../lib/TransformLexer");
 
-    lexer.setTransformText(source);
+describe("Lexer", () => {
+    it("getNextToken", () => {
+        const lexer = new TransformLexer();
+        const source = "matrix(1, 2, 3, 4, 5, 6)";
 
-    var token = lexer.getNextToken();
+        lexer.setTransformText(source);
 
-    while ( !token.typeis(10)) {
-        console.log(token.type + ":" + token.text);
-        token = lexer.getNextToken();
-    }
-};
+        let token = lexer.getNextToken();
+
+        while (!token.typeis(10)) {
+            console.log(token.type + ":" + token.text);
+            token = lexer.getNextToken();
+        }
+    });
+});
