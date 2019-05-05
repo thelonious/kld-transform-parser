@@ -1,6 +1,4 @@
-"use strict";
-
-const TransformLexer = require("../lib/TransformLexer");
+import TransformLexer from "../lib/TransformLexer.js";
 
 describe("Lexer", () => {
     it("getNextToken", () => {

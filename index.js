@@ -1,7 +1,5 @@
-"use strict";
-
 // expose classes
 
-exports.TransformLexer = require("./lib/TransformLexer");
-exports.TransformParser = require("./lib/TransformParser");
-exports.SampleHandler = require("./lib/SampleHandler");
+export {default as TransformLexer} from "./lib/TransformLexer.js";
+export {default as TransformParser} from "./lib/TransformParser.js";
+export {default as SampleHandler} from "./lib/SampleHandler.js";

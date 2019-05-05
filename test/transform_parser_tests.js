@@ -1,7 +1,5 @@
-"use strict";
-
-const TransformParser = require("../lib/TransformParser");
-const SampleHandler = require("../lib/SampleHandler");
+import TransformParser from "../lib/TransformParser.js";
+import SampleHandler from "../lib/SampleHandler.js";
 
 describe("Parser", () => {
     it("parseTransform", () => {
