@@ -24,23 +24,30 @@ function _createClass(Constructor, protoProps, staticProps) {
  *  TransformLexeme.js
  *
  *  @copyright 2005,2013 Kevin Lindsey
+ *  @module TransformLexeme
  */
 
 /**
  *  TransformLexeme
- *
- *  @param {Object} type
- *  @param {Object} text
  */
 var TransformLexeme =
 /*#__PURE__*/
 function () {
+  /**
+   *  @param {number} type
+   *  @param {string} text
+   */
   function TransformLexeme(type, text) {
     _classCallCheck(this, TransformLexeme);
 
     this.type = type;
     this.text = text;
   }
+  /**
+   *  @param {number} type
+   *  @returns {boolean}
+   */
+
 
   _createClass(TransformLexeme, [{
     key: "typeis",
@@ -70,13 +77,14 @@ TransformLexeme.EOD = 10;
 
 /**
  *  TransformLexer
- *
- *  @param {string} transformText
  */
 
 var TransformLexer =
 /*#__PURE__*/
 function () {
+  /**
+   *  @param {string} transformText
+   */
   function TransformLexer(transformText) {
     _classCallCheck(this, TransformLexer);
 
@@ -104,6 +112,8 @@ function () {
     }
     /**
      *  getNextToken
+     *
+     *  @returns {module:kld-transform-parser.TransformLexeme}
      */
 
   }, {
@@ -166,6 +176,9 @@ function () {
 var TransformParser =
 /*#__PURE__*/
 function () {
+  /**
+   *  constructor
+   */
   function TransformParser() {
     _classCallCheck(this, TransformParser);
 
@@ -309,6 +322,7 @@ TransformParser.METHODNAME = {
  *  SampleHandler.js
  *
  *  @copyright 2005, 2013 Kevin Lindsey
+ *  @module SampleHandler
  */
 
 /**
@@ -416,6 +430,8 @@ function () {
   return SampleHandler;
 }();
 
-// expose classes
+/**
+ *  @module kld-transform-parser
+ */
 
 export { SampleHandler, TransformLexer, TransformParser };

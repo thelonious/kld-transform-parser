@@ -30,23 +30,30 @@
    *  TransformLexeme.js
    *
    *  @copyright 2005,2013 Kevin Lindsey
+   *  @module TransformLexeme
    */
 
   /**
    *  TransformLexeme
-   *
-   *  @param {Object} type
-   *  @param {Object} text
    */
   var TransformLexeme =
   /*#__PURE__*/
   function () {
+    /**
+     *  @param {number} type
+     *  @param {string} text
+     */
     function TransformLexeme(type, text) {
       _classCallCheck(this, TransformLexeme);
 
       this.type = type;
       this.text = text;
     }
+    /**
+     *  @param {number} type
+     *  @returns {boolean}
+     */
+
 
     _createClass(TransformLexeme, [{
       key: "typeis",
@@ -76,13 +83,14 @@
 
   /**
    *  TransformLexer
-   *
-   *  @param {string} transformText
    */
 
   var TransformLexer =
   /*#__PURE__*/
   function () {
+    /**
+     *  @param {string} transformText
+     */
     function TransformLexer(transformText) {
       _classCallCheck(this, TransformLexer);
 
@@ -110,6 +118,8 @@
       }
       /**
        *  getNextToken
+       *
+       *  @returns {module:kld-transform-parser.TransformLexeme}
        */
 
     }, {
@@ -172,6 +182,9 @@
   var TransformParser =
   /*#__PURE__*/
   function () {
+    /**
+     *  constructor
+     */
     function TransformParser() {
       _classCallCheck(this, TransformParser);
 
@@ -315,6 +328,7 @@
    *  SampleHandler.js
    *
    *  @copyright 2005, 2013 Kevin Lindsey
+   *  @module SampleHandler
    */
 
   /**
@@ -422,7 +436,9 @@
     return SampleHandler;
   }();
 
-  // expose classes
+  /**
+   *  @module kld-transform-parser
+   */
 
   exports.SampleHandler = SampleHandler;
   exports.TransformLexer = TransformLexer;
