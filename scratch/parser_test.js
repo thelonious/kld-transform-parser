@@ -1,9 +1,7 @@
-#!/usr/bin/env node
+#!/usr/bin/env node -r esm
 
-"use strict";
-
-const TransformParser = require("../lib/TransformParser");
-const SampleHandler = require("../lib/SampleHandler");
+import TransformParser from "../lib/TransformParser.js";
+import SampleHandler from "../lib/SampleHandler.js";
 
 const parser = new TransformParser();
 const source = "matrix(1, 2, 3, 4, 5, 6)";

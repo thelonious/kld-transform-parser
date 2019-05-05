@@ -1,8 +1,6 @@
-#!/usr/bin/env node
+#!/usr/bin/env node -r esm
 
-"use strict";
-
-const TransformLexer = require("../lib/TransformLexer");
+import TransformLexer from "../lib/TransformLexer.js";
 
 const lexer = new TransformLexer();
 const source = "matrix(1, 2, 3, 4, 5, 6)";
