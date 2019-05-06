@@ -1,4 +1,3 @@
-kld-transform-parser
-====================
+# kld-transform-parser
 
 Event-driven SVG transform parser
