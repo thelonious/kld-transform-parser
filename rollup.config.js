@@ -1,5 +1,3 @@
-import resolve from "rollup-plugin-node-resolve";
-import commonjs from "rollup-plugin-commonjs";
 import babel from "rollup-plugin-babel";
 import {terser} from "rollup-plugin-terser";
 
@@ -22,7 +20,7 @@ function getRollupObject({minifying, format = "umd"} = {}) {
             format,
             sourcemap: minifying,
             file: `dist/index-${format}${minifying ? ".min" : ""}.js`,
-            name: "KldIntersections"
+            name: "KldTransformParser"
         },
         plugins: [
             babel({
@@ -30,9 +28,7 @@ function getRollupObject({minifying, format = "umd"} = {}) {
                 presets: [
                     ["@babel/env", {modules: false}]
                 ]
-            }),
-            resolve(),
-            commonjs()
+            })
         ]
     };
     if (minifying) {
