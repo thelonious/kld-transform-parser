@@ -1,6 +1,6 @@
 {
   "name": "kld-transform-parser",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Event-driven SVG transform parser",
   "author": {
     "name": "Kevin Lindsey",
